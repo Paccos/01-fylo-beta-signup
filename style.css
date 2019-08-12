@@ -41,3 +41,31 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 
+#signup {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+input {
+	vertical-align: middle;
+	font-size: 40px;
+	height: 70px;
+	width: 60%;
+}
+
+button {
+	font-family: 'Open Sans', sans-serif;
+	background-color: var(--accent-green);
+	color: white;
+	font-size: 18px;
+	height: 72px;
+	width: 33%;
+	vertical-align: middle;
+}
+
+.rounded-shadowed {
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 3px 4px 8px #d8d8d8;
+}
