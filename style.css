@@ -1,3 +1,10 @@
+:root {
+	--soft-blue: hsl(243, 86%, 85%);
+	--dark-blue: hsl(243, 87%, 12%);
+	--accent-green: hsl(163, 95%, 43%);
+	--neutral-gray: hsl(0, 0%, 50%);
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
