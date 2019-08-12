@@ -20,7 +20,9 @@ header {
 }
 
 ion-icon {
-	margin: 2em;
+	margin: 0 1em;
+	font-size: 32px;
+	color: var(--dark-blue);
 }
 
 .header-elem {
@@ -28,3 +30,14 @@ ion-icon {
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+h1,
+h2 {
+	font-family: 'Raleway', sans-serif;
+	color: var(--dark-blue);
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
