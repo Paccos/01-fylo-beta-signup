@@ -5,3 +5,19 @@
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+ion-icon {
+	margin: 2em;
+}
+
+.header-elem {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
