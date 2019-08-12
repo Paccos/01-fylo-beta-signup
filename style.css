@@ -5,10 +5,15 @@
 	--neutral-gray: hsl(0, 0%, 50%);
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
 }
+
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
@@ -38,7 +43,7 @@ h2 {
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
+	color: var(--neutral-gray);
 }
 
 #signup {
@@ -55,7 +60,6 @@ input {
 }
 
 button {
-	font-family: 'Open Sans', sans-serif;
 	background-color: var(--accent-green);
 	color: white;
 	font-size: 18px;
@@ -68,4 +72,10 @@ button {
 	border: 0;
 	border-radius: 4px;
 	box-shadow: 3px 4px 8px #d8d8d8;
+}
+
+#privacy-link {
+	color: var(--dark-blue);
+	display: flex;
+	justify-content: flex-end;
 }
