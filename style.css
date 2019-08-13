@@ -34,6 +34,13 @@ body {
 	justify-content: space-between;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 50vh;
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;
