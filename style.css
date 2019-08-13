@@ -27,6 +27,10 @@ body {
 	padding: 3em;
 }
 
+#mobile-header {
+	display: none;
+}
+
 #main-page {
 	flex: 1;
 	margin: 4em;
@@ -112,4 +116,33 @@ button {
 	display: flex;
 	font-size: 12pt;
 	justify-content: flex-end;
+}
+
+@media screen and (max-width: 640pt) {
+	.container {
+		flex-direction: column;
+		height: auto;
+	}
+
+	#hero {
+		background-image: url('./images/bg-intro.svg');
+		background-repeat: no-repeat;
+	}
+
+	#desktop-header {
+		display: none;
+	}
+
+	#mobile-header {
+		display: flex;
+	}
+
+	ion-icon {
+		color: white;
+		font-size: 24px;
+	}
+
+	#logo {
+		filter: invert(1) hue-rotate(180deg) brightness(3);
+	}
 }
