@@ -146,4 +146,8 @@ button {
 	#logo {
 		filter: invert(1) hue-rotate(180deg) brightness(3);
 	}
+
+	#main-page {
+		margin: 0 3em;
+	}
 }
