@@ -46,15 +46,6 @@ main {
 	height: 50vh;
 }
 
-.attribution {
-	font-size: 11px;
-	text-align: center;
-}
-
-.attribution a {
-	color: hsl(228, 45%, 44%);
-}
-
 header {
 	display: flex;
 	flex-direction: row;
@@ -124,7 +115,16 @@ button {
 	justify-content: flex-end;
 }
 
-@media screen and (max-width: 640pt) {
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 700pt) {
 	.container {
 		flex-direction: column;
 		height: auto;
