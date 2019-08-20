@@ -22,57 +22,41 @@
 	</head>
 	<body>
 		<div class="container">
-			<div id="hero">
-				<header id="mobile-header">
-					<div class="header-elem">
-						<img id="logo" src="images/logo.svg" alt="Fylo logo" />
-					</div>
-					<div class="header-elem">
-						<ion-icon name="logo-twitter"></ion-icon>
-						<ion-icon name="logo-facebook"></ion-icon>
-						<ion-icon name="mail"></ion-icon>
-					</div>
-				</header>
+			<nav class="menu">
+				<img class="logo" src="images/logo.svg" alt="Fylo logo" />
+				<ul>
+					<ion-icon name="logo-twitter"></ion-icon>
+					<ion-icon name="logo-facebook"></ion-icon>
+					<ion-icon name="mail"></ion-icon>
+				</ul>
+			</nav>
+			<div class="hero">
 				<img
-					id="hero-img"
+					class="hero-img"
 					src="images/illustration-main.svg"
 					alt="A Fylo user that holds the key to his securely locked folder"
 				/>
 			</div>
-			<div id="main-page">
-				<header id="desktop-header">
-					<div class="header-elem">
-						<img src="images/logo.svg" alt="Fylo logo" />
-					</div>
-					<div class="header-elem">
-						<ion-icon name="logo-twitter"></ion-icon>
-						<ion-icon name="logo-facebook"></ion-icon>
-						<ion-icon name="mail"></ion-icon>
-					</div>
-				</header>
 
-				<main>
-					<h1>All your files in one secure location, accessible anywhere.</h1>
+			<section class="main-page">
+				<h1>All your files in one secure location, accessible anywhere.</h1>
 
-					<p>
-						Fylo stores all your most important files in one secure location.
-						Access them wherever you need, share and collaborate with friends,
-						family and co-workers.
-					</p>
+				<p>
+					Fylo stores all your most important files in one secure location.
+					Access them wherever you need, share and collaborate with friends,
+					family and co-workers.
+				</p>
 
-					<div id="signup-section">
-						<h2>Sign up for early access</h2>
+				<div class="signup-section">
+					<h3>Sign up for early access</h3>
 
-						<form action="#" id="signup">
-							<input id="signup-email" type="text" class="rounded-shadowed" />
-							<button id="signup-button" class="rounded-shadowed">
-								Sign Up
-							</button>
-						</form>
-					</div>
-				</main>
-				<a href="#" id="privacy-link">Privacy Policy</a>
-			</div>
+					<form action="#" class="signup">
+						<input type="text" class="rounded-shadowed" />
+						<input type="submit" class="rounded-shadowed" value="Sign Up" />
+					</form>
+				</div>
+				<a href="#" class="privacy-link">Privacy Policy</a>
+			</section>
 		</div>
 
 		<footer>
