@@ -3,6 +3,7 @@
 	--dark-blue: hsl(243, 87%, 12%);
 	--accent-green: hsl(163, 95%, 43%);
 	--neutral-gray: hsl(0, 0%, 50%);
+	--shadow: 3px 4px 8px #d8d8d8;
 }
 
 * {
@@ -29,6 +30,16 @@ body {
 	padding: 0 2em;
 }
 
+.hero-img {
+	display: block;
+	width: auto;
+	height: auto;
+
+	min-width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+
 .menu {
 	display: flex;
 	justify-content: space-between;
@@ -52,7 +63,7 @@ ion-icon {
 }
 
 .main-page {
-	padding: 0 2em;
+	padding: 5em 2em;
 	display: flex;
 	flex-direction: column;
 }
@@ -78,9 +89,9 @@ ion-icon {
 	justify-content: space-evenly;
 }
 
-.signup-section input {
-	border: 1px solid lightgray;
+.signup-section input[type='text'] {
 	box-shadow: none;
+	border: 1px solid lightgray;
 	width: 100%;
 	height: 36px;
 	font-size: 32px;
@@ -99,27 +110,72 @@ ion-icon {
 .rounded-shadowed {
 	border: 0;
 	border-radius: 4px;
-	box-shadow: 3px 4px 8px #d8d8d8;
-}
-
-input[type='submit'] {
-	box-shadow: 3px 4px 8px #d8d8d8;
+	box-shadow: var(--shadow);
 }
 
 .privacy-link {
 	align-self: flex-end;
+	color: var(--dark-blue);
+	font-size: 12px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 664px) {
 	.container {
-		flex-direction: row;
+		flex-wrap: wrap;
+		background-image: none;
+		height: 100vh;
+		width: 100vw;
 	}
 
 	.hero {
 		background-image: linear-gradient(45deg, rgb(93, 98, 168), rgb(3, 28, 113));
+		width: 40vw;
+		height: 100vh;
 	}
 
 	.menu {
-		align-self: flex-end;
+		order: 1;
+		padding: 0 2em;
+	}
+
+	.menu ul {
+		flex-wrap: wrap;
+	}
+
+	.logo {
+		filter: none;
+		margin: 0;
+	}
+
+	ion-icon {
+		color: var(--dark-blue);
+		font-size: 28px;
+		margin: 0 10px;
+	}
+
+	.main-page {
+		order: 2;
+		width: 40vw;
+	}
+
+	.signup {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.signup-section input[type='text'] {
+		font-size: 40px;
+		height: 64px;
+		width: 60%;
+		border: none;
+		margin: 0;
+		border: none;
+		box-shadow: var(--shadow);
+	}
+
+	.signup-section input[type='submit'] {
+		font-size: 18px;
+		height: 72px;
+		width: 30%;
 	}
 }
